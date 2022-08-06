@@ -1,0 +1,35 @@
+function [] = OriginalSignal(dn_input,w0)
+%UNTITLED3 Summary of this function goes here
+%   Detailed explanation goes here
+t_start=-10;
+t_end=10;
+interval=1;
+n_start=dn_input(1,1);
+n_length=size(dn_input,1);
+n_end=n_start+n_length-1;
+disp(n_start);
+disp(n_end);
+disp(n_length);
+
+x_t=zeros((t_end-t_start*1/interval),2);
+u=1
+disp('something');
+    for t = t_start:interval:t_end
+        disp('something');
+        i=1;
+        x=0;
+        for n = n_start:n_end
+            dn_temp=dn_input(i,2);
+            n_temp = dn_input(i,1);
+            x = x + dn_temp*exp(-1i*w0*n_temp*t);
+            i=i+1;
+            
+        end
+        disp(x);
+        x_t(
+        u=u+1;
+    end
+disp(x_t);
+disp('done');
+end
+

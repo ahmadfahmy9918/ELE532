@@ -1,0 +1,22 @@
+
+
+%x_2
+x_2_rc=OriginalSignal(xv_2,pi/10);
+figure('name',['X_2 Graph']);
+x=dn(:,1);
+y=dn(:,2);
+plot(x,y);
+title(['X_2'])
+xlabel('n')
+ylabel('x_2')
+
+%x_3
+x_3_rc=OriginalSignal(xv_3,pi/20);
+figure('name',['X_3 Graph']);
+x=dn(:,1);
+y=dn(:,2);
+plot(x,y);
+title(['X_3'])
+xlabel('n')
+ylabel('x_3')
+
